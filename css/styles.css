@@ -1,0 +1,408 @@
+:root {
+    --accent-color: #2196F3;
+}
+
+html,
+body, 
+header {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+body {
+    width: 1600px;
+    height: 2349px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/*==================== HEADER ====================*/
+
+header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    color: #ECECEC;
+}
+
+.box {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 3px;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+}
+
+.logo-web {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    color: #2196F3;
+}
+
+.logo-studio {
+    color: #000000;
+}
+
+nav {
+    position: absolute;
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    height: 16px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+
+.studio {
+    width: 49px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.portfolio {
+    width: 77px;
+    margin: 0 50px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.contacts {
+    width: 77px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.tel {
+    position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    text-decoration: none;
+}
+
+/*.tel:hover, */
+.email:hover,
+.email:focus {
+    color: var(--accent-color);
+}
+
+.email {
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+/*==================== /HEADER ====================*/
+
+/*==================== MAIN ====================*/
+.hero {
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    background: #2F303A;
+}
+
+.hero-title {
+    width: 696px;
+    height: 120px;
+    padding: 200px 452px 280px 452px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 350px;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+.button:hover,
+.button:focus {
+    background-color: tomato;
+    border-color: #FFFFFF;
+}
+
+.destination {
+    position: absolute;
+    width: 1170px;
+    height: 101px;
+    left: 215px;
+    top: 774px;
+}
+
+.destination-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.destination-box {
+    width: 270px;
+    padding-right: 30px;
+}
+
+.destination-right-box {
+    padding: 0px;
+}
+
+.title-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.business-photo {
+    position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 969px;
+}
+
+.business-photo-title {
+    position: relative;
+    width: 378px;
+    height: 42px;
+    left: 391px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.business-photo-item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.business-photo-img {
+    padding: 0 30px;
+}
+
+.personal {
+    position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1449px;
+    background-color: #F5F4FA;
+}
+
+.personal-title {
+    position: relative ;
+    width: 266px;
+    height: 42px;
+    left: 668px;
+    top: 94px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.block-team {
+    top: 0px;
+}
+
+.team {
+    position: relative;
+    width: 1170px;
+    height: 368px;
+    left: 215px;
+    top: 144px;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.team:last-child {
+    padding-right: 0px;
+}
+
+.own-data {
+    padding-right: 30px;
+}
+
+.name {
+    width: 153px;
+    height: 19px;
+    padding-left: 60px;
+    padding-top: 30px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.job-name {
+    width: 147px;
+    height: 19px;
+    padding-left: 70px;
+    padding-top: 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+/*==================== /MAIN ====================*/
+
+/*==================== FOOTER ====================*/
+.footer {
+    position: relative;
+    width: 1600px;
+    height: 252px;
+    top: 2097px;
+    left: 0px;
+    background-color: #2F303A;
+}
+
+.logo-footer {
+    position: relative;
+    top: 60px;
+}
+
+.logo-studio-footer {
+    color: #FFFFFF;
+}
+
+.address {
+    position: relative;
+    width: 231px;
+    height: 81px;
+    left: 215px;
+    top: 84px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.address-link {
+    width: 231px;
+    height: 21px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.74;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+.email-footer {
+    margin: 10px 0 8px 0;
+}
+
+.address-city {
+    color: #FFFFFF;
+}
+/*==================== /FOOTER ====================*/
+
+
+
+
+
