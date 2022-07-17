@@ -2,17 +2,18 @@
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
-        <!--
+        <!--<link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/reset.css">
         <meta name="viewport" content="width=device-width" initial-scale="1.0"> -->
-        <link rel="stylesheet" href="css/styles.css">
         
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
 
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/styles.css">
         <title> home-work-3</title>
     </head>
     <body>
@@ -24,9 +25,9 @@
             </section>
             <nav>
                 <ul class="navigation">
-                    <li><a class="nav-link studio" href="">Студия</a></li>
-                    <li><a class="nav-link portfolio" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="nav-link contacts" href="">Кoнтакты</a></li>
+                    <li><a class="nav-link" href="">Студия</a></li>
+                    <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                    <li><a class="nav-link" href="">Кoнтакты</a></li>
                 </ul>
             </nav>
         
@@ -35,11 +36,13 @@
             <!-- phone number-->
             <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
        </header>
+
        <main>
             <section class="hero" id="3">
                 <h1 class="hero-title" >Эффективные решения <br> для вашего бизнеса</h1>
                 <button class="button" type="button" id="4">Заказать услугу</button>
             </section>
+
             <section class="destination" >
                 <ul class="destination-item" >
                     <li class="destination-box" id="5">
@@ -76,12 +79,13 @@
                     </li>
                 </ul>
             </section>
+
             <section class="business-photo" id="13">
                 <h2 class="business-photo-title">Чем мы занимаемся</h2>
                 <ul class="business-photo-item">
-                    <li><img src="./images/img1.png" alt="фото" width="370"></li>
+                    <li class="business-photo-img"><img src="./images/img1.png" alt="фото" width="370"></li>
                     <li class="business-photo-img"><img src="./images/img2.jpg" alt="фото" width="370"></li>
-                    <li><img src="./images/img3.jpg" alt="фото" width="370"></li>
+                    <li class="business-photo-img"><img src="./images/img3.jpg" alt="фото" width="370"></li>
                 </ul>
             </section>
 
@@ -90,22 +94,22 @@
                 <section class="block-team" id="15">
                     <ul  class="team">
                         <li class="own-data">
-                            <img src="./images/1.jpg" alt="фото" width="270" >
+                            <img src="./images/1.jpg" class="team-photo" alt="фото" width="270" >
                             <h3 class="name" id="16">Игорь Демьяненко</h3>
                             <p class="job-name" id="17">Product Designer</p> 
                         </li>
                         <li class="own-data">
-                            <img src="./images/2.jpg" alt="фото" width="270">
+                            <img src="./images/2.jpg" class="team-photo" alt="фото" width="270">
                             <h3 class="name" id="18">Ольга Репина</h3>
                             <p class="job-name" id="19">Frontend Developer</p>
                         </li>
                         <li class="own-data">
-                            <img src="./images/3.jpg" alt="фото" width="270">
+                            <img src="./images/3.jpg" class="team-photo" alt="фото" width="270">
                             <h3 class="name" id="20">Николай Тарасов</h3>
                             <p class="job-name" id="21">Marketing</p>
                         </li>
                         <li class="own-data">
-                            <img src="./images/4.jpg" alt="фото" width="270">
+                            <img src="./images/4.jpg" class="team-photo" alt="фото" width="270">
                             <h3 class="name" id="22">Михаил Ермаков</h3>
                             <p class="job-name" id="23">UI Designer</p>
                         </li>
@@ -113,6 +117,7 @@
                 </section>
             </section>
        </main>
+       
         <footer class="footer">
             <section class="logo logo-footer">
                 <a href="" class="logo-web" id="1">Web<span 

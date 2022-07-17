@@ -2,43 +2,51 @@
     --accent-color: #2196F3;
 }
 
+* {
+    margin-top: 0;
+    padding: 0;
+}
+
 html,
 body, 
-header {
+header,
+footer,
+.port-main {
     font-family: 'Roboto';
     font-style: normal;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-body {
-    width: 1600px;
-    height: 2349px;
-    margin: 0 auto;
-    height: 100%;
+ul {
+    list-style-type: NONE;
 }
 
-/*==================== HEADER ====================*/
-
+/*
 header {
     height: 80px;
     display: flex;
     flex-direction: row;
     color: #ECECEC;
-}
+    align-items: center;
+    vertical-align: auto;
+}==================== HEADER ====================*/
+
 
 .box {
-    position: absolute;
     width: 1600px;
-    height: 80px;
+    height: 81px;
     left: 0px;
-    top: 3px;
-    align-items: center;
+    top: 7px;
+    padding-top: 32px;
+    padding-left: 215px;
+    display: flex;
+    flex-direction: row;
 }
 
 .logo {
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
+    width: 294px;
+    padding-top: 2px;
 }
 
 .logo-web {
@@ -56,27 +64,23 @@ header {
     color: #000000;
 }
 
-nav {
-    position: absolute;
+.navigation {
     width: 294px;
-    height: 16px;
-    left: 453px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 281px 0 0;
+}
+
+.nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-right: 50px;
 
     color: #212121;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: row;
-    height: 16px;
-}
-
-.nav-link {
-    text-decoration: none;
 }
 
 .nav-link:hover,
@@ -84,48 +88,27 @@ nav {
     color: var(--accent-color);
 }
 
-
-.studio {
-    width: 49px;
+.email {    
+    width: 135px;    
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-right: 50px;
 
-    color: #212121;
-}
-
-.portfolio {
-    width: 77px;
-    margin: 0 50px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: #212121;
-}
-
-.contacts {
-    width: 77px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: #212121;
+    color: #757575;
 }
 
 .tel {
-    position: absolute;
     width: 122px;
-    height: 16px;
-    left: 1263px;
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #757575;
     text-decoration: none;
+    
+    color: #757575;
 }
 
 /*.tel:hover, */
@@ -134,34 +117,26 @@ nav {
     color: var(--accent-color);
 }
 
-.email {
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
+
 /*==================== /HEADER ====================*/
 
 /*==================== MAIN ====================*/
+body,
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .hero {
-    position: absolute;
     width: 1600px;
     height: 600px;
-    left: 0px;
-    top: 80px;
     background: #2F303A;
+    padding-top: 200px;
+    align-items: center;
+    margin-bottom: 94px;
 }
 
 .hero-title {
-    width: 696px;
-    height: 120px;
-    padding: 200px 452px 280px 452px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -169,14 +144,14 @@ nav {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-top: 0%;
+    margin-bottom: 30px;
 }
 
 .button {
-    position: absolute;
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 350px;
+    margin-left: 700px;
 
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -198,21 +173,23 @@ nav {
 }
 
 .destination {
-    position: absolute;
     width: 1170px;
     height: 101px;
-    left: 215px;
-    top: 774px;
+    margin-left: 215px;
+    margin-bottom: 94px;
 }
 
 .destination-item {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    padding-left: 0;
 }
 
 .destination-box {
     width: 270px;
-    padding-right: 30px;
+    height: 101px;
+    margin-right: 30px;
 }
 
 .destination-right-box {
@@ -225,6 +202,7 @@ nav {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
     color: #212121;
 }
 
@@ -237,24 +215,20 @@ nav {
 }
 
 .business-photo {
-    position: absolute;
     width: 1170px;
     height: 386px;
-    left: 215px;
-    top: 969px;
+    margin-left: 215px;
+    margin-bottom: 94px;
 }
 
 .business-photo-title {
-    position: relative;
-    width: 378px;
-    height: 42px;
-    left: 391px;
-
+    text-align: center;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 
     color: #212121;
 }
@@ -262,92 +236,73 @@ nav {
 .business-photo-item {
     display: flex;
     flex-direction: row;
-    padding-top: 50px;
 }
 
 .business-photo-img {
-    padding: 0 30px;
+    width: 370px;
+    margin-right: 30px;
+}
+
+.business-photo-img:last-child {
+    margin-right: 0px;
 }
 
 .personal {
-    position: absolute;
     width: 1600px;
     height: 648px;
-    left: 0px;
-    top: 1449px;
     background-color: #F5F4FA;
+    padding-top: 94px;
 }
 
 .personal-title {
-    position: relative ;
-    width: 266px;
-    height: 42px;
-    left: 668px;
-    top: 94px;
-
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 
     color: #212121;
 }
 
-.block-team {
-    top: 0px;
-}
-
 .team {
-    position: relative;
     width: 1170px;
     height: 368px;
-    left: 215px;
-    top: 144px;
-    
-    align-items: center;
+    margin-left: 215px;
     display: flex;
     flex-direction: row;
+    margin-bottom: -194px;
 }
 
-.team:last-child {
-    padding-right: 0px;
+.team-photo {
+    margin-bottom: 30px;
 }
 
 .own-data {
-    padding-right: 30px;
+    margin-right: 30px;
+}
+
+.own-data:last-child {
+    margin-right: 0px;
 }
 
 .name {
-    width: 153px;
-    height: 19px;
-    padding-left: 60px;
-    padding-top: 30px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
-    
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 
     color: #212121;
 }
 
 .job-name {
-    width: 147px;
-    height: 19px;
-    padding-left: 70px;
-    padding-top: 10px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-
-    align-items: center;
     text-align: center;
-    letter-spacing: 0.03em;
 
     color: #757575;
 }
@@ -355,17 +310,19 @@ nav {
 
 /*==================== FOOTER ====================*/
 .footer {
-    position: relative;
+    position: absolute;
+        top: 2000px;
     width: 1600px;
     height: 252px;
-    top: 2097px;
-    left: 0px;
     background-color: #2F303A;
+    padding-left: 215px;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo-footer {
-    position: relative;
-    top: 60px;
+    margin-bottom: 20px;
 }
 
 .logo-studio-footer {
@@ -373,14 +330,12 @@ nav {
 }
 
 .address {
-    position: relative;
     width: 231px;
     height: 81px;
-    left: 215px;
-    top: 84px;
     color: rgba(255, 255, 255, 0.6);
     display: flex;
     flex-direction: column;
+    font-style: normal;
 }
 
 .address-link {
@@ -404,5 +359,128 @@ nav {
 
 
 
+/*==================== PORT-MAIN ====================*/
+.port-main {
+    position: absolute;
+    width: 1170px;
+    height: 1360px;
+    top: 174px;
+    left: 215px;
+    margin-bottom: 93px;
+}
 
+.port-filters {
+    width: 611px;
+    height: 54px;
+    left: 495px;
+    top: 174px;
+    padding-left: 280px;
+    margin-bottom: 34px;
+    display: flex;
+    flex-direction: row;
+}
 
+.port-button {
+    height: 38px;
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-right: 8px;
+
+    color: #212121;
+}
+
+.port-button:last-child {
+    margin-right: 0;
+}
+
+.port-button:hover,
+.port-button:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.port-all {
+    width: 73px;
+}
+
+.port-web {
+    width: 128px;
+}
+
+.port-apps {
+    width: 145px;
+}
+
+.port-design {
+    width: 101px;
+}
+
+.port-marketing {
+    width: 130px;
+}
+
+.port-projects {
+    font-size: 0;
+}
+
+.port-project {
+    display: inline-block;
+    width: 370px;
+    height: 404px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    color: #EEEEEE;
+}
+
+.port-project:nth-child(3n) {
+    margin-right: 0;
+}
+
+.photo {
+    width: 370px;
+    height: 294px;
+    margin-bottom: 20px;
+}
+
+.port-title-link {
+    width: 322px;
+    height: 70px;
+    margin: 0px 24px 20px 24px;
+}
+
+.port-title {
+    width: 322px;
+    height: 36px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: #212121;
+}
+
+.port-link {
+    width: 322px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+/*==================== /PORT-MAIN ====================*/
+
+/*==================== PORT-FOOTER ====================*/
+.footer.port-footer {
+    position: absolute;
+    top: 1627px;
+}
+
+/*==================== /PORT-FOOTER ====================*/
