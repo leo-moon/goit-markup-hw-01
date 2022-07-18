@@ -43,7 +43,7 @@ header {
     flex-direction: row;
     align-items: center;
     border: 1px solid #ECECEC;
-    border-color: #fff #fff #ECECEC #FFFFFF;
+    border-color: #FFFFFF #FFFFFF #ECECEC #FFFFFF;
 }
 
 .logo {
