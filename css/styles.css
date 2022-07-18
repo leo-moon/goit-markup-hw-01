@@ -465,7 +465,8 @@ main {
   /*  margin-right: 30px;*/
     margin-bottom: 30px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border: 1px solid ;
+    border-color: #FFFFFF #FFFFFF #EEEEEE #FFFFFF ;
 }
 
 .port-project:nth-last-of-type(-n+3) {
