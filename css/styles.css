@@ -2,9 +2,19 @@
     --accent-color: #2196F3;
 }
 
-* {
+h1,
+h2,
+h3,
+h4,
+p {
     margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
+}
+
+img {
+    display: block;
+    padding-left: 0;
 }
 
 html,
@@ -18,9 +28,20 @@ footer,
     text-decoration: none;
 }
 
-ul {
+link {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
+ul, 
+nl {
     list-style-type: NONE;
     font-size: 0;
+    padding: 0;
 }
 
 /*
@@ -227,9 +248,9 @@ main {
 
 .business-photo {
     width: 1170px;
-    height: 386px;
+   /* height: 386px;  */
     margin-left: 215px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .business-photo-title {
@@ -260,9 +281,10 @@ main {
 
 .personal {
     width: 1600px;
-    height: 648px;
+    /*height: 648px;*/
     background-color: #F5F4FA;
-    padding-top: 94px;
+    padding: 94px 0;
+    
 }
 
 .personal-title {
@@ -279,7 +301,7 @@ main {
 
 .team {
     width: 1170px;
-    height: 368px;
+    /*height: 368px;*/
     margin-left: 215px;
     display: flex;
     flex-direction: row;
@@ -289,14 +311,23 @@ main {
 .team-photo {
     margin-bottom: 30px;
 }
-/*
-.own-data {
-    margin-right: 30px;
-}*/
 
+.own-data {
+    box-shadow: 0px 2px 1px 0 rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);    
+}
+/*right radius(4px) ;
+     radius (4px); 
+
+drop-shadow(
+        1px 0px 2px rgba(0, 0, 0, 0.2),
+        1px 0px 1px rgba(0, 0, 0, 0.14),
+        3px 0px 1px rgba(0, 0, 0, 0.12)
+        );
 .own-data:last-child {
     margin-right: 0px;
-}
+}*/
 
 .name {
     font-weight: 500;
@@ -310,6 +341,7 @@ main {
 }
 
 .job-name {
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -321,13 +353,10 @@ main {
 
 /*==================== FOOTER ====================*/
 .footer {
-    position: absolute;
-        top: 2000px;
     width: 1600px;
-    height: 252px;
     background-color: #2F303A;
-    padding-left: 215px;
-    padding-top: 60px;
+    padding: 60px 215px;
+    margin-top: -85px;
     display: flex;
     flex-direction: column;
 }
@@ -453,7 +482,6 @@ main {
     margin: 0;
     box-sizing: border-box;
     display: flex;
-    flex-direction: flexbox layout;
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 0;
