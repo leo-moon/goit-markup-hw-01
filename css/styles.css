@@ -17,6 +17,12 @@ img {
     padding-left: 0;
 }
 
+body {
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 html,
 body, 
 header,
@@ -50,35 +56,31 @@ nl {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 
 /*==================== HEADER ====================*/
+.main-header {
+    border: 1px solid #ECECEC;
+}
+
 .box { 
     padding-top: 24px;
     padding-bottom: 25px;   
     display: flex;
     align-items: center;
-    border: 1px solid #ECECEC;
-    border-color: #FFFFFF #FFFFFF #ECECEC #FFFFFF;
-}
-
-.logo {
-    margin-right: 93px;
 }
 
 .main-logo {
+    margin-right: 93px;
+}
+
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-}
-
-.logo:hover,
-.logo:focus {
-    line-style: solid;
-    line-color: var(--accent-color);
-    text-decoration: underline;
 }
 
 .logo-web {
@@ -90,6 +92,12 @@ nl {
     color: #000000;
 }
 
+.logo:hover,
+.logo:focus {
+    line-style: solid;
+    line-color: var(--accent-color);
+    text-decoration: underline;
+}
 .navigation {
     width: 294px;
     display: flex;
@@ -97,7 +105,6 @@ nl {
     justify-content: space-between;
     padding: 0;
 }
-
 
 .nav-link {
     font-weight: 500;
@@ -155,6 +162,10 @@ nl {
     padding-top: 200px;
     align-items: center;
     padding-bottom: 200px;
+}
+
+.hero.with-img {
+background-image: url("../images/main/bckgrnd-img.jpg");
 }
 
 .hero-title {
@@ -277,42 +288,46 @@ nl {
 }
 
 .own-data {
-    background: #FFFFFF;
+    background: #FFFFFF; 
+    text-align: center;
+      
+}
+
+.name-job {
     box-shadow: 
         0px 1px 3px rgba(0, 0, 0, 0.12), 
         0px 1px 1px rgba(0, 0, 0, 0.14), 
         0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px; 
 }
 
 .name {
     padding-top: 30px;
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
-    text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 10px;
 
     color: #212121;
 }
 
 .job-name {
-    margin-bottom: 30px;
+    padding-bottom: 28px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    text-align: center;
 
     color: #757575;
 }
+
 /*==================== /MAIN ====================*/
 
 /*==================== FOOTER ====================*/
 .footer {
     background-color: #2F303A;
     padding: 60px 0px;
-    margin-top: -85px;
+    /*  margin-top: -85px; */
     display: flex;
     flex-direction: column;
 }
@@ -358,6 +373,15 @@ nl {
 
 
 /*==================== PORTFOLIO-MAIN ====================*/
+/*
+.port-background {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+} */
+
+.port-main {
+    padding: 94px 0px 94px 0px;
+}
+
 .port-box {
     display: flex;
     flex-direction: row;
@@ -368,18 +392,11 @@ nl {
     color: #2196F3;
 }
 
-.port-main {
-    padding: 94px 0px;
-}
 
 .port-filters {
-    width: 611px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 34px;
     display: flex;
     flex-direction: row;
-    height: 38px;
 }
 
 .port-button {
@@ -388,7 +405,6 @@ nl {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
-    text-align: center;
     letter-spacing: 0.03em;
     margin-right: 8px;
     border-radius: 4px;
@@ -398,34 +414,17 @@ nl {
 }
 
 .port-button:last-child {
-    margin-right: 0;
+    margin-right: auto;
+}
+
+.port-all {
+    margin-left: auto;
 }
 
 .port-button:hover,
 .port-button:focus {
     background-color: #2196F3;
     color: #FFFFFF;
-}
-
-/*
-.port-all {
-    width: 73px;
-}
-
-.port-web {
-    width: 128px;
-}
-
-.port-apps {
-    width: 145px;
-}
-
-.port-marketing {
-    width: 130px;
-}
-*/
-.port-design {
-    width: 101px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -438,15 +437,12 @@ nl {
 .port-project {
     width:calc((100% - 2*30px)/3);
     background: #FFFFFF;
-    border: 1px solid rgba(238, 238, 238, 1)
-}
-
-.port-background {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
 }
 
 .port-title-link {
     padding: 20px 24px 20px 24px;
+    border: 1px solid #EEEEEE;
 }
 
 .port-title {

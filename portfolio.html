@@ -16,107 +16,110 @@
         <title>portfolio</title>
     </head>
     <body>
-        <header class="header">
-            <div class="container box port-box">
-                <section class="logo port-logo">
+        <header class="main-header">
+            <div class="container box">
+                <div class="logo main-logo">
                     <a href="" class="logo-web" id="1">Web<span class="logo-web logo-studio">Studio</span>
                     </a>
-                </section>
+                </div>
                 <nav>
                     <ul class="navigation">
-                        <li><a class="nav-link studio" href="./index.html">Студия</a></li>
-                        <li><a class="nav-link portfolio port-portfolio" href="">Портфолио</a></li>
-                        <li><a class="nav-link contacts" href="">Кoнтакты</a></li>
+                        <li class="nav-list"><a class="nav-link" href="./index.html">Студия</a></li>
+                        <li class="nav-list"><a class="nav-link port-portfolio" href="./portfolio.html">Портфолио</a></li>
+                        <li class="nav-list"><a class="nav-link" href="">Кoнтакты</a></li>
                     </ul>
                 </nav>
-            
+        
                 <!-- e-mail address -->
                 <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 <!-- phone number-->
                 <a class="tel" href="tel:+380961111111">+38 096 111 11 11</a>
-            </div>    
+            </div>
         </header>
 
-        <main class="port-main">
-            <div class="container">
-                <div class="port-background">
-                    <section class="port-filters">
-                        <button class="port-button port-all" type="button">Все</button>
-                        <button class="port-button port-web" type="button">Веб-сайты</button>
-                        <button class="port-button port-apps" type="button">Приложения</button>
-                        <button class="port-button port-design" type="button">Дизайн</button>
-                        <button class="port-button port-marketing" type="button">Маркетинг</button>
-                    </section>
-
-                    <ul class="port-projects">
-                        <li class="port-project">
-                            <img src="./images/portfolio/Технокряк.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Технокряк</h3>
-                                <p class="port-link">Веб-сайт</p>
-                            </section>
-                        </li>
-                        <li class="port-project">
-                            <img src="./images/portfolio/ПостерNewOrleanvsGoldenStar.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Постер New Orlean vs Golden Star</h3>
-                                <p class="port-link">Дизайн</p>
-                            </section>
-                        </li>
-                        <li class="port-project">
-                            <img src="./images/portfolio/РесторанSeafood.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Ресторан Seafood</h3>
-                                <p class="port-link">Приложение</p>
-                            </section>
-                        </li>
-                        <li class="port-project">
-                            <img src="./images/portfolio/ПроектPrime.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Проект Prime</h3>
-                                <p class="port-link">Маркетинг</p>
-                            </section>
-                        </li>
-                        <li class="port-project">
-                            <img src="./images/portfolio/ПроектBoxes.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Проект Boxes</h3>
-                                <p class="port-link">Приложение</p>
-                            </section>
-                        </li>
-                        <li class="port-project">
-                            <img src="./images/portfolio/InspirationhasnoBorders.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Inspiration has no Borders</h3>
-                                <p class="port-link">Веб-сайт</p>
-                            </section>
-                        </li>
-                        <li class="port-project">
-                            <img src="./images/portfolio/ИзданиеLimitedEdition.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Издание Limited Edition</h3>
-                                <p class="port-link">Дизайн</p>
-                            </section>
-                        </li>
-                        <li class="port-project">
-                            <img src="./images/portfolio/ПроектLAB.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Проект LAB</h3>
-                                <p class="port-link">Маркетинг</p>
-                            </section>
-                        </li>
-                        <li class="port-project">
-                            <img src="./images/portfolio/GrowingBusiness.jpg" class="photo" alt="фото">
-                            <section class="port-title-link">
-                                <h3 class="port-title">Growing Business</h3>
-                                <p class="port-link">Приложение</p>
-                            </section>
-                        </li>
-                    </ul>
+        <main>
+            <section class="port-main">
+                <div class="container">
+                    <div class="port-background">
+                        
+                        <ul class="port-filters">
+                                <button class="port-button port-all" type="button">Все</button>
+                                <button class="port-button port-web" type="button">Веб-сайты</button>
+                                <button class="port-button port-apps" type="button">Приложeния</button>
+                                <button class="port-button port-design" type="button">Дизайн</button>
+                                <button class="port-button port-marketing" type="button">Маркетинг</button>
+                        </ul>
+                    
+                        <ul class="port-projects">
+                            <li class="port-project">
+                                <img src="./images/portfolio/Технокряк.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Технокряк</h3>
+                                    <p class="port-link">Веб-сайт</p>
+                                </div>
+                            </li>
+                            <li class="port-project">
+                                <img src="./images/portfolio/ПостерNewOrleanvsGoldenStar.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Постер New Orlean vs Golden Star</h3>
+                                    <p class="port-link">Дизайн</p>
+                                </div>
+                            </li>
+                            <li class="port-project">
+                                <img src="./images/portfolio/РесторанSeafood.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Ресторан Seafood</h3>
+                                    <p class="port-link">Приложение</p>
+                                </div>
+                            </li>
+                            <li class="port-project">
+                                <img src="./images/portfolio/ПроектPrime.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Проект Prime</h3>
+                                    <p class="port-link">Маркетинг</p>
+                                </div>
+                            </li>
+                            <li class="port-project">
+                                <img src="./images/portfolio/ПроектBoxes.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Проект Boxes</h3>
+                                    <p class="port-link">Приложение</p>
+                                </div>
+                            </li>
+                            <li class="port-project">
+                                <img src="./images/portfolio/InspirationhasnoBorders.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Inspiration has no Borders</h3>
+                                    <p class="port-link">Веб-сайт</p>
+                                </div>
+                            </li>
+                            <li class="port-project">
+                                <img src="./images/portfolio/ИзданиеLimitedEdition.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Издание Limited Edition</h3>
+                                    <p class="port-link">Дизайн</p>
+                                </div>
+                            </li>
+                            <li class="port-project">
+                                <img src="./images/portfolio/ПроектLAB.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Проект LAB</h3>
+                                    <p class="port-link">Маркетинг</p>
+                                </div>
+                            </li>
+                            <li class="port-project">
+                                <img src="./images/portfolio/GrowingBusiness.jpg" class="photo" alt="фото">
+                                <div class="port-title-link">
+                                    <h3 class="port-title">Growing Business</h3>
+                                    <p class="port-link">Приложение</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
-        
+
          <footer class="footer">
             <div class="container " >
                 <section class="logo logo-footer">
