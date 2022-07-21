@@ -393,7 +393,7 @@ background-image: url("../images/main/bckgrnd-img.jpg");
 
 .port-filters {
     margin-bottom: 50px;
-    padding-left: 280px;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     text-align: center;
