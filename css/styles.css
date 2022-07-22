@@ -124,27 +124,46 @@ nl {
     color: var(--accent-color);
 }
 
-.email {   
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+.email {
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 30px;
 
     color: #757575;
 }
 
+.email,
 .tel {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    
+
     color: #757575;
 }
+
+.email::before,
+.tel::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.email::before {
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/header/envelope.svg);
+}
+
+.tel::before {
+    width: 10px;
+    height: 16px;
+    background-image: url(../images/header/smartphone.svg);
+}
+
 
 /*.tel:hover, */
 .email:hover,
@@ -220,12 +239,49 @@ background-image: url("../images/main/bckgrnd-img.jpg");
     font-size: 1rem;
 }
 
+
+
+.destination-box::before {
+    content: "";
+    display: block;
+    height: 120px;
+    /*
+    
+ background-image: url(../images/main/destination/antenna.svg);
+    
+    */
+    background-color: #F5F4FA;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.destination-box.icon-antenna::before {
+    background-image: url(../images/main/destination/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/main/destination/clock.svg);
+}
+.icon-diagram::before {
+    background-image: url(../images/main/destination/diagram.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../images/main/destination/astronaut.svg);
+}
+
+.destination-box:hover::before {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
 .title-item {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-top: 30px;
     margin-bottom: 10px;
     color: #212121;
 }
@@ -291,6 +347,18 @@ background-image: url("../images/main/bckgrnd-img.jpg");
     background: #FFFFFF; 
     text-align: center;
       
+}
+
+.name-job::after {
+    content: "";
+    display: inline-block;
+    height: 44px;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    background-image: url(../images/main/team/instagram-gray.svg);
+
+    background-repeat: no-repeat;
+    
 }
 
 .name-job {
